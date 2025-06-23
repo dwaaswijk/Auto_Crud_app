@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/herkansings_project.props" />
+</Project>
