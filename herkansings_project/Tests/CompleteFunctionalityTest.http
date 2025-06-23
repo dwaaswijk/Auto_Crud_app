@@ -1,0 +1,77 @@
+### 1. [POST] Voeg een Automerk toe (BMW)
+POST https://localhost:7122/api/Automerken
+Content-Type: application/json
+
+{
+  "naam": "BMW"
+}
+
+### 2. [POST] Voeg nog een Automerk toe (Audi)
+POST https://localhost:7122/api/Automerken
+Content-Type: application/json
+
+{
+  "naam": "Audi"
+}
+
+### 3. [GET] Haal alle Automerken op
+GET https://localhost:7122/api/Automerken
+
+### 4. [GET] Haal specifiek Automerk (id: 1)
+GET https://localhost:7122/api/Automerken/1
+
+### 5. [POST] Voeg Autotype toe aan BMW (id: 1)
+POST https://localhost:7122/api/Autotypes
+Content-Type: application/json
+
+{
+  "naam": "X5",
+  "automerkId": 1
+}
+
+### 6. [POST] Voeg nog een Autotype toe aan BMW (id: 1)
+POST https://localhost:7122/api/Autotypes
+Content-Type: application/json
+
+{
+  "naam": "3-serie",
+  "automerkId": 1
+}
+
+### 7. [POST] Voeg Autotype toe aan Audi (id: 2)
+POST https://localhost:7122/api/Autotypes
+Content-Type: application/json
+
+{
+  "naam": "A4",
+  "automerkId": 2
+}
+
+### 8. [GET] Haal alle Autotypes op
+GET https://localhost:7122/api/Autotypes
+
+### 9. [GET] Haal specifiek Autotype op (id: 1)
+GET https://localhost:7122/api/Autotypes/1
+
+### 10. [PUT] Wijzig Autotype met id: 1
+PUT https://localhost:7122/api/Autotypes/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "naam": "X5 M",
+  "automerkId": 1
+}
+
+### 11. [DELETE] Verwijder Autotype met id: 2 ("3-serie")
+DELETE https://localhost:7122/api/Autotypes/2
+
+### 12. [DELETE] Verwijder Automerk met id: 2 ("Audi") – werkt alleen als alle bijbehorende Autotypes verwijderd zijn!
+DELETE https://localhost:7122/api/Automerken/2
+
+### 13. [DELETE] Verwijder Autotype met id: 1 ("X5 M")
+DELETE https://localhost:7122/api/Autotypes/1
+
+### 14. [DELETE] Verwijder Automerk met id: 1 ("BMW") – werkt alleen als alle bijbehorende Autotypes verwijderd zijn!
+DELETE https://localhost:7122/api/Automerken/1
+

@@ -1,6 +1,0 @@
-@herkansings_project_HostAddress = http://localhost:5206
-
-GET {{herkansings_project_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

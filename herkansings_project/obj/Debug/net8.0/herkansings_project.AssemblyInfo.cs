@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("herkansings_project")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17120af04e950c9395905611b7b0fb9b7ac99fd8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+093bc62821a01c72bf50f1fee6b5bad4533fa247")]
 [assembly: System.Reflection.AssemblyProductAttribute("herkansings_project")]
 [assembly: System.Reflection.AssemblyTitleAttribute("herkansings_project")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
